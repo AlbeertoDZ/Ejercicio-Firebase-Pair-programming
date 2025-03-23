@@ -55,5 +55,5 @@ document.addEventListener("DOMContentLoaded", function () {
   };
 
   
-  mostrarContactos(); // Mostrar contactos al cargar la página
+  mostrarContactos(); 
 });

@@ -45,24 +45,24 @@
               ></textarea>
             </div>
             <div class="form-group">
-                <label for="urlImage">URL:</label>
-                <input
-                  type="text"
-                  id="urlImage"
-                  name="urlImage"
-                  placeholder="Tu URL"
-                  required
-                />
-              </div>
-            <!--"https://media.istockphoto.com/id/538665020/es/foto/meme-de-internet-por-qu%C3%A9-no-ilustraci%C3%B3n-3d-de-la-cara-de-la-rabia.jpg?s=612x612&w=0&k=20&c=uxICPhBq1asx7S1h0FSfodEI0Nt_6RyNHr-HV4XahS8="-->
+              <label for="urlImage">URL:</label>
+              <input
+                type="text"
+                id="urlImage"
+                name="urlImage"
+                placeholder="Tu URL"
+                required
+              />
+            </div>
             <button type="submit">Enviar</button>
-
-            <section id="fallo"></section>
           </form>
           <button type="click" id="delete-all">Borrar todos los contactos</button>
-          <button type="click" id="delete-one">Borrar un contacto</button>
         </div>
       </section>
+
+      <h3>Contactos Guardados</h3>
+      <div id="contactList"></div> <!-- Contenedor para mostrar los contactos -->
+      <section id="fallo"></section> <!-- Asegúrate de que este elemento exista -->
     </main>
 
     <script src="./script.js"></script>

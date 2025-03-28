@@ -3,68 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style/style.css">
+    <title>Local Storage</title>
   </head>
   <body>
-    <header></header>
-
     <main>
-      <section id="contacto">
-        <div class="form">
-          <h4>Formulario de contacto</h4>
-          <form>
-            <div class="form-group">
-              <label for="name">Nombre:</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Tu nombre"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="email">Correo electrónico:</label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Tu correo electrónico"
-                required
-              />
-            </div>
-            <div class="form-group">
-              <label for="message">Mensaje:</label>
-              <textarea
-                id="message"
-                name="message"
-                placeholder="Escribe tu mensaje aquí"
-                rows="5"
-                required
-              ></textarea>
-            </div>
-            <div class="form-group">
-              <label for="urlImage">URL:</label>
-              <input
-                type="text"
-                id="urlImage"
-                name="urlImage"
-                placeholder="Tu URL"
-                required
-              />
-            </div>
-            <button type="submit">Enviar</button>
-          </form>
-          <button type="click" id="delete-all">Borrar todos los contactos</button>
-        </div>
-      </section>
+      <section id="contactos">
+        <form action="#" method="post" id="miFormulario">
+        <h2>Formulario de Contacto</h2>
 
-      <h3>Contactos Guardados</h3>
-      <div id="contactList"></div> 
-      <section id="fallo"></section> 
+        <label for="nombre">Nombre:</label><br />
+        <input type="text" id="nombre" name="nombre" /><br /><br />
+
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" /><br /><br />
+
+        <label for="mensaje">Mensaje:</label><br />
+        <textarea id="mensaje" name="mensaje" rows="5"></textarea><br /><br />
+
+        <label for="imagen">URL Imagen:</label><br />
+        <input type="url" id="imagen" name="imagen" /><br /><br />
+
+        <button type="submit">Enviar</button>
+      </form>
+      <button id="borrar-contacto">Borrar contacto por ID</button>
+      <button id="borrar-datos">Limpiar contactos</button>
+      <button id="borrar-todos">Borrar todos los contactos</button>
+    </section>
+
+    <h3>Contacto guardado</h3>
+    <div id="contactList"></div>
+    
     </main>
 
-    <script src="./script.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    
+    <script src="script.js"></script>
   </body>
 </html>

@@ -1,11 +1,10 @@
 let firebaseConfig = {
-  apiKey: "AIzaSyDXAlQeHVJVMBxI-ffcLy8tY_NyaRe5GCM",
-  authDomain: "demoweb-3fd5d.firebaseapp.com",
-  projectId: "demoweb-3fd5d",
-  storageBucket: "demoweb-3fd5d.firebasestorage.app",
-  messagingSenderId: "595157286679",
-  appId: "1:595157286679:web:f31888123093d0da8dc152",
-  measurementId: "G-L4LSFQMK1H",
+  apiKey: "AIzaSyBj8ErQsV3BN8hU4L1TQlrbqMrFSXvEvlo",
+  authDomain: "demoweb-fcf43.firebaseapp.com",
+  projectId: "demoweb-fcf43",
+  storageBucket: "demoweb-fcf43.firebasestorage.app",
+  messagingSenderId: "671115535767",
+  appId: "1:671115535767:web:854a06e63629a88cf590d2"
 };
 
 firebase.initializeApp(firebaseConfig); // Inicializaar app Firebase
